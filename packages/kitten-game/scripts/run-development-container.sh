@@ -8,15 +8,15 @@ yarn userscript:build
 yarn devcontainer:build
 
 echo "Removing previous container..."
-docker stop kitten-game || true
-docker rm kitten-game || true
+podman stop kitten-game || true
+podman rm kitten-game || true
 echo "Previous container removed or non-existent."
 echo ""
 
 echo "Starting new container..."
-docker run \
+podman run \
   --detach \
-  --mount type=bind,source="${BASEDIR}/../../userscript/output",target=/kitten-game/kitten-scientists \
+  --volume "${BASEDIR}/../../userscript/output":/kitten-game/kitten-scientists:Z \
   --name kitten-game \
   --publish 8100:8080 kitten-game
 echo "Container started."

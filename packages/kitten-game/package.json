@@ -15,7 +15,7 @@
   },
   "main": "Dockerfile",
   "scripts": {
-    "devcontainer:build": "docker build --tag kitten-game .",
+    "devcontainer:build": "podman build --tag kitten-game .",
     "devcontainer:run": "bash ./scripts/run-development-container.sh"
   }
 }

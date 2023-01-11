@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../trade/">
+        <link rel="prev" href="../log-filters/">
       
       
-        <link rel="next" href="../space/">
+        <link rel="next" href="../../development/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
     
     
       
-        <title>Religion - Kitten Scientists</title>
+        <title>State Management - Kitten Scientists</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#religion" class="md-skip">
+        <a href="#state-management" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Religion
+              State Management
             
           </span>
         </div>
@@ -460,21 +460,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../religion/" class="md-nav__link">
         Religion
       </a>
-      
     </li>
   
 
@@ -540,11 +530,86 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../state-management/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          State Management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         State Management
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#copy-to-clipboard" class="md-nav__link">
+    Copy to Clipboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-from-clipboard" class="md-nav__link">
+    Load from Clipboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-states" class="md-nav__link">
+    Local States
+  </a>
+  
+    <nav class="md-nav" aria-label="Local States">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reset-to-factory-defaults" class="md-nav__link">
+    Reset to Factory Defaults
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-stored-states" class="md-nav__link">
+    Load Stored States
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -639,6 +704,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#copy-to-clipboard" class="md-nav__link">
+    Copy to Clipboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-from-clipboard" class="md-nav__link">
+    Load from Clipboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-states" class="md-nav__link">
+    Local States
+  </a>
+  
+    <nav class="md-nav" aria-label="Local States">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reset-to-factory-defaults" class="md-nav__link">
+    Reset to Factory Defaults
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-stored-states" class="md-nav__link">
+    Load Stored States
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -656,18 +770,42 @@
 
 
 
-<h1 id="religion">Religion<a class="headerlink" href="#religion" title="Permanent link">&para;</a></h1>
+<h1 id="state-management">State Management<a class="headerlink" href="#state-management" title="Permanent link">&para;</a></h1>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This section contains features that can erase all of your <abbr title="Kitten Scientists">KS</abbr> settings, or even your entire save game. Absolutely <strong>back up your game</strong> before exploring these!</p>
+</div>
+<p>If you disable the checkbox <strong>Do NOT confirm destructive actions. (Danger!)</strong>, you will <strong>not</strong> be asked to confirm any actions that destroy your data. Enabling this option allows you to switch between states with a single click and load save games very quickly.</p>
+<h2 id="copy-to-clipboard">Copy to Clipboard<a class="headerlink" href="#copy-to-clipboard" title="Permanent link">&para;</a></h2>
+<p>With a single click you can copy only your <abbr title="Kitten Scientists">KS</abbr> settings, or your entire <abbr title="Kittens Game">KG</abbr> save game to the clipboard.</p>
+<p>The <strong>Compress data</strong> setting controls if the copied content will be compressed with the same process that <abbr title="Kittens Game">KG</abbr> uses when you export your save. When you <em>don't</em> compress the data, you will be able to read and edit it in plain text.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you want to export a <abbr title="Kittens Game">KG</abbr> save game, and you want to be able to load it through the regular <abbr title="Kittens Game">KG</abbr> import mechanism later, remember that <abbr title="Kittens Game">KG</abbr> only expects <em>compressed</em> data.</p>
+</div>
+<h2 id="load-from-clipboard">Load from Clipboard<a class="headerlink" href="#load-from-clipboard" title="Permanent link">&para;</a></h2>
+<p>You can load either only <abbr title="Kitten Scientists">KS</abbr> settings or an entire <abbr title="Kittens Game">KG</abbr> save game. When you use either option, you can enter your save game data into the appearing prompt. <abbr title="Kitten Scientists">KS</abbr> supports loading both compressed and uncompressed data.</p>
+<h2 id="local-states">Local States<a class="headerlink" href="#local-states" title="Permanent link">&para;</a></h2>
+<p>Allows you to quickly store and restore entire sets of <abbr title="Kitten Scientists">KS</abbr> settings.</p>
+<p>When you store your current state, <abbr title="Kitten Scientists">KS</abbr> places it in the <strong>Load stored state</strong> section. You can then click on that state to load it again. You can also import a state from the clipboard. Both compressed and uncompressed states can be imported.</p>
+<h3 id="reset-to-factory-defaults">Reset to Factory Defaults<a class="headerlink" href="#reset-to-factory-defaults" title="Permanent link">&para;</a></h3>
+<p>Resets every setting to the state that <abbr title="Kitten Scientists">KS</abbr> would have if you used it for the first time today. This only impacts <abbr title="Kitten Scientists">KS</abbr>, your <abbr title="Kittens Game">KG</abbr> save game is not touched by this action.</p>
+<h3 id="load-stored-states">Load Stored States<a class="headerlink" href="#load-stored-states" title="Permanent link">&para;</a></h3>
+<p>When you have stored any states, they will appear in this list. Clicking on their name will load them.</p>
+<p>You can also copy the state to the clipboard, or delete it. When copying a state, the <strong>Compress data</strong> setting is respected.</p>
+<!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 28, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 9, 2023</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 28, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 9, 2023</span>
       
     
   </small>
